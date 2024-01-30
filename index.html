@@ -3,88 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Calculator</title>
-    
-    <style type="text/css">
-        #answer {
-            width: 300px;
-            border-radius: 13px;
-        }
-        .container{
-            height: 100vh;
-            width:100vw;
-            background-color:rgb(39, 68, 96);
-        }
-        .container>h1{
-                  font-family:Arial, Helvetica, sans-serif;
-                  color: antiquewhite;     
-        }
-        .calc {
-            background: rgb(49, 13, 13);
-            padding: 10px;
-            display: inline-block;
-            border-radius: 20px;
-        }
-        input {
-            font-size: 30px;
-            width: 70px;
-            height: 60px;
-            margin: 5px;
-            border-radius: 10px;
-            border: red;
-            background: rgb(242, 238, 238);
-            outline: black;
-        }
-        
-    </style>
+    <title>landing page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container" align="center">
-        <h1>My Personal Calculator</h1>
-        <form name="forms">
-            <div class="calc">
-                <input type="text" name="screen" id="answer">
-                <br>
-                <input type="button" value="1" onclick="appendToScreen('1')">
-                <input type="button" value="2" onclick="appendToScreen('2')">
-                <input type="button" value="3" onclick="appendToScreen('3')">
-                <input type="button" value="AC" onclick="clearScreen()">
-                <br>
-                <input type="button" value="4" onclick="appendToScreen('4')">
-                <input type="button" value="5" onclick="appendToScreen('5')">
-                <input type="button" value="6" onclick="appendToScreen('6')">
-                <input type="button" value="+" onclick="appendToScreen('+')">
-                <br>
-                <input type="button" value="7" onclick="appendToScreen('7')">
-                <input type="button" value="8" onclick="appendToScreen('8')">
-                <input type="button" value="9" onclick="appendToScreen('9')">
-                <input type="button" value="-" onclick="appendToScreen('-')">
-                <br>
-                <input type="button" value="0" onclick="appendToScreen('0')">
-                <input type="button" value="." onclick="appendToScreen('.')">
-                <input type="button" value="=" onclick="calculateResult()">
-                <input type="button" value="*" onclick="appendToScreen('*')">
-                <br>
-                <input type="button" value="(" onclick="appendToScreen('(')">
-                <input type="button" value=")" onclick="appendToScreen(')')">
-                <input type="button" value="%" onclick="appendToScreen('%')">
-                <input type="button" value="/" onclick="appendToScreen('/')">
+    <div id="main">
+        <div data-scroll data-scroll-speed="-5" id="page1">
+            <nav>
+                <img src="images/Screenshot 2023-05-30 220719.png" alt="">
+                <div id="right-nav">
+                    <button>Demo ride</button>
+                    <button>About</button>
+                    <button>Contact</button>
+                </div>
+            </nav>
+            <div class="bottom-page1">
+                <h1>Experience the<br>World</h1>
             </div>
-        </form>
-    </div>
-
-    <script>
-        function appendToScreen(value) {
-            forms.screen.value += value;
-        }
-
-        function clearScreen() {
-            forms.screen.value = '';
-        }
-
-        function calculateResult() {
-            forms.screen.value = eval(forms.screen.value);
-        }
-    </script>
+            <div class="bottom-page1-inner">
+                <h4>Create a real world experience<br> and release the potential of base </h4>
+                
+            </div>
+            <img src="https://images.unsplash.com/photo-1706313296876-ba53e6c1670b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" autoplay loop muted ></img>
+        </div>
 </body>
 </html>
